@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text animation</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+        .left{
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: url("bg1.jpg");
+            overflow: hidden;
+            background-position: center;
+        }
+        .right{
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: rgb(22, 123, 5);
+            overflow: hidden;
+            background-image: url("back2.jpg");
+            background-size: cover;
+        }
+        h1{
+            position: absolute;
+            font-size: 10em;
+            white-space: nowrap;
+            color: white;
+            line-height: 70vh;
+            animation: anim 100s linear infinite;
+            font-family: sans-serif;
+            
+        }
+        @keyframes anim{
+            0%{transform: translateX(0);}
+            100%{transform: translateX(-100%);}
+        }
+        .left h1{
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 3px;
+            left: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left">
+            <h1>I Am Sadasiv Rout From Odisha In Bhubaneswar Now I Am Leaving In Bangalore JP Nagar Near Vega cIty Mall & Here I Have Currently Complited Python Full Stck Webdeveloper</h1>
+        </div>
+
+        <div class="right">
+            <h1>I Am Sadasiv Rout From Odisha In Bhubaneswar Now I Am Leaving In Bangalore JP Nagar Near Vega cIty Mall & Here I Have Currently Complited Python Full Stck Webdeveloper</h1>
+        </div>
+    </div>
+</body>
+</html>
